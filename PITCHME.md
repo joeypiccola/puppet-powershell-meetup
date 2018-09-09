@@ -5,17 +5,17 @@
 
 ## Agenda
 
-- Tasks with PowerShell (control-repo and module based)
-- asdf
+- Puppet Tasks with PowerShell
+-
 - asdf
 
 ---
 
-## Puppet Task (the pieces)
+### Puppet Tasks (the pieces)
 
-- Reside in ${module}\Tasks
-- Task file
-- Metadata file [optional]
+- Reside in $module\Tasks
+- Task file (PowerShell, Ruby, Bash, etc)
+- Metadata .json file [optional]
 
 ```
 C:\gits\kms_win [master ≡]> tree /F tasks
@@ -25,7 +25,8 @@ C:\gits\kms_win [master ≡]> tree /F tasks
     slmgr_ipk.json
     slmgr_ipk.ps1
 ```
-
+@[3-4](You can present code inlined within your slide markdown too.)
+@[5-6](Displayed using code-syntax highlighting just like your IDE.)
 ---
 
 @title[JavaScript Block]
