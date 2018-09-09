@@ -11,20 +11,20 @@
 
 ---
 
-## Puppet Tasks
+## Puppet Task (the pieces)
 
-- Code Presenting |
-- Repo Source, Static Blocks, GIST |
-- Custom CSS Styling |
-- Slideshow Background Image |
-- Slide-specific Background Images |
-- Custom Logo, TOC, and Footnotes |
+- Reside in ${module}\Tasks
+- Task file
+- Metadata file [optional]
 
----?code=sample/go/server.go&lang=golang&title=Golang File
-
-@[1,3-6](Present code found within any repo source file.)
-@[8-18](Without ever leaving your slideshow.)
-@[19-28](Using GitPitch code-presenting with (optional) annotations.)
+```
+C:\gits\kms_win [master ≡]> tree /F tasks
+  C:\GITS\KMS_WIN\TASKS
+    slmgr_ato.json
+    slmgr_ato.ps1
+    slmgr_ipk.json
+    slmgr_ipk.ps1
+```
 
 ---
 
