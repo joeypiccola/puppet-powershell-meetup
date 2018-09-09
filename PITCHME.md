@@ -1,9 +1,5 @@
-# PowerShell + Puppet
-
-### stuff
-
-![puppet](https://puppet.com/themes/hoverboard/images/puppet-logo/puppet-logo-amber-white-lg.png)
-![powershell](https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png)
+## @color[#2e75e8](PowerShell) + @color[orange](Puppet)
+### more stuff
 
 ---
 
