@@ -4,6 +4,7 @@
 # For details, visit Wiki:
 # https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
 #
+layout : center-right
 theme : night
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css

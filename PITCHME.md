@@ -1,19 +1,17 @@
 ## @color[#2e75e8](PowerShell) + @color[#FE9F17](Puppet)
-### more stuff
+### Tasks, DSC, Chocolatey
 
 ---
 
 ## Agenda
 
-<br>
-
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
+- Tasks with PowerShell (control-repo and module based)
+- asdf
+- asdf
 
 ---
 
-## Template Features
+## Puppet Tasks
 
 - Code Presenting |
 - Repo Source, Static Blocks, GIST |
