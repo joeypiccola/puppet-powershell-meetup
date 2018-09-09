@@ -32,6 +32,29 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 
 ---
 
+#### Task Metadata
+
+```json
+{
+    "puppet_task_version": 1,
+    "description": "A task for installing a windows product key with slmgr.vbs.",
+    "input_method": "powershell",
+    "parameters": {
+        "activation_key": {
+            "description": "The activation key to be installed via slmgr.vbs /ipk.",
+            "type": "String"
+        }
+    }
+}
+```
+
+```powershell
+Param(
+    [Parameter(Mandatory=$True)]
+    [String] $activation_key
+)
+cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
+```
 
 ---
 
