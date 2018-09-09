@@ -1,10 +1,13 @@
-# Black
+# PowerShell + Puppet
 
-### A GitPitch Presentation Template
+### stuff
+
+![puppet](https://puppet.com/themes/hoverboard/images/puppet-logo/puppet-logo-amber-white-lg.png)
+![powershell](https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png)
 
 ---
 
-## Tips!
+## Agenda
 
 <br>
 
@@ -73,7 +76,7 @@ http.createServer(function (request, response) {
 ## Template Help
 
 - [Code Presenting](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting)
-  + [Repo Source](https://github.com/gitpitch/gitpitch/wiki/Code-Delimiter-Slides), [Static Blocks](https://github.com/gitpitch/gitpitch/wiki/Code-Slides), [GIST](https://github.com/gitpitch/gitpitch/wiki/GIST-Slides) 
+  + [Repo Source](https://github.com/gitpitch/gitpitch/wiki/Code-Delimiter-Slides), [Static Blocks](https://github.com/gitpitch/gitpitch/wiki/Code-Slides), [GIST](https://github.com/gitpitch/gitpitch/wiki/GIST-Slides)
 - [Custom CSS Styling](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS)
 - [Slideshow Background Image](https://github.com/gitpitch/gitpitch/wiki/Background-Setting)
 - [Slide-specific Background Images](https://github.com/gitpitch/gitpitch/wiki/Image-Slides#background)
