@@ -1,4 +1,4 @@
-## @color[#2e75e8](PowerShell) + @color[orange](Puppet)
+## @color[#2e75e8](PowerShell) + @color[#FE9F17](Puppet)
 ### more stuff
 
 ---
