@@ -11,13 +11,13 @@
 
 ---
 
-#### Puppet Tasks (the pieces)
+#### Puppet Tasks
 
-@size[1.2em](your-content)
-
+@ol
 - Reside in $module\Tasks
 - Task file (PowerShell, Ruby, Bash, etc)
 - Metadata .json file [optional]
+@olend
 
 ```
 C:\gits\kms_win [master ≡]> tree /F tasks
@@ -29,6 +29,9 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 ```
 @[3-4](Example task 1.)
 @[5-6](Example task 2.)
+
+---
+
 
 ---
 
