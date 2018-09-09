@@ -1,6 +1,6 @@
-# Flux
+# Puppet + PowerShell
 
-An application architecture for React
+DSC & Chocolatey & more...
 
 ---
 
