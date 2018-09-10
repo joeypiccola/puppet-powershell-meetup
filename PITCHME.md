@@ -7,7 +7,7 @@
 
 - Puppet Tasks with PowerShell
 - Upgrade PowerShell with Tasks & Chocolatey
-- Desired State Configuration (DSC
+- Desired State Configuration (DSC)
 
 ---
 
@@ -169,7 +169,7 @@ Task parameters:
 
 <p><span class="slide-title">Traditional DSC</span></p>
 
-```
+```powershell
 WindowsFeature IIS {
   Ensure = 'present'
   Name   = 'Web-Server'
@@ -178,7 +178,7 @@ WindowsFeature IIS {
 
 <p><span class="slide-title">Puppet DSC</span></p>
 
-```
+```t
 dsc_windowsfeature {'IIS':
   dsc_ensure => 'present',
   dsc_name   => 'Web-Server',
@@ -186,9 +186,9 @@ dsc_windowsfeature {'IIS':
 ```
 ---
 
-<p><span class="slide-title">website demo</span></p>
+<p><span class="slide-title">DSC resource examples</span></p>
 
-```
+```t
 dsc_windowsfeature {'IIS':
   dsc_ensure => 'present',
   dsc_name   => 'Web-Server',
@@ -255,7 +255,7 @@ dsc_xwebsite {'LetsDoThis':
 
 ![choco](assets/image/xwebsite_doc.jpg)
 
-```
+```powershell
 dsc_xwebsite {'LetsDoThis':
   dsc_ensure       => 'present',
   dsc_name         => $websitename,
@@ -273,82 +273,38 @@ dsc_xwebsite {'LetsDoThis':
 
 ---
 
-@size[.8em](your-content1)
-@size[1.0em](your-content1)
-@size[1.5em](your-content1)
-@size[2.0em](your-content2)
-@size[2.5em](your-content3)
+#### Puppet DSC Demo
 
 ---
 
-@title[JavaScript Block]
-
-<p><span class="slide-title">JavaScript Block</span></p>
-
-```javascript
-// Include http module.
-var http = require("http");
-
-// Create the server. Function passed as parameter
-// is called on every request made.
-http.createServer(function (request, response) {
-  // Attach listener on end event.  This event is
-  // called when client sent, awaiting response.
-  request.on("end", function () {
-    // Write headers to the response.
-    // HTTP 200 status, Content-Type text/plain.
-    response.writeHead(200, {
-      'Content-Type': 'text/plain'
-    });
-    // Send data and end response.
-    response.end('Hello HTTP!');
-  });
-
-// Listen on the 8080 port.
-}).listen(8080);
+```ruby
+dsc {'LetsDoThis':
+  resource_name => 'xWebsite',
+  module        => {
+    name    => 'xWebAdministration',
+    version => '2.2.0.0',
+  },
+  properties    => {
+    'ensure'       => 'Present',
+    'state'        => 'Started',
+    'name'         => $websitename,
+    'physicalpath' => $destinationpath,
+    'bindinginfo'  => {
+      'dsc_type'       => 'MSFT_xWebBindingInformation[]',
+      'dsc_properties' => {
+        'protocol' => 'HTTP',
+        'port'     => 8080,
+      }
+    },
+  }
+}
 ```
 
-@[1,2](You can present code inlined within your slide markdown too.)
-@[9-17](Displayed using code-syntax highlighting just like your IDE.)
-@[19-20](Again, all of this without ever leaving your slideshow.)
-
----?gist=onetapbeyond/494e0fecaf0d6a2aa2acadfb8eb9d6e8&lang=scala&title=Scala GIST
-
-@[23](You can even present code found within any GitHub GIST.)
-@[41-53](GIST source code is beautifully rendered on any slide.)
-@[57-62](And code-presenting works seamlessly for GIST too, both online and offline.)
-
 ---
 
-## Template Help
+#### DSC Comparison
 
-- [Code Presenting](https://github.com/gitpitch/gitpitch/wiki/Code-Presenting)
-  + [Repo Source](https://github.com/gitpitch/gitpitch/wiki/Code-Delimiter-Slides), [Static Blocks](https://github.com/gitpitch/gitpitch/wiki/Code-Slides), [GIST](https://github.com/gitpitch/gitpitch/wiki/GIST-Slides)
-- [Custom CSS Styling](https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS)
-- [Slideshow Background Image](https://github.com/gitpitch/gitpitch/wiki/Background-Setting)
-- [Slide-specific Background Images](https://github.com/gitpitch/gitpitch/wiki/Image-Slides#background)
-- [Custom Logo](https://github.com/gitpitch/gitpitch/wiki/Logo-Setting) [TOC](https://github.com/gitpitch/gitpitch/wiki/Table-of-Contents) [Footnotes](https://github.com/gitpitch/gitpitch/wiki/Footnote-Setting)
-
----
-
-## Go GitPitch Pro!
-
-<br>
-<div class="left">
-    <i class="fa fa-user-secret fa-5x" aria-hidden="true"> </i><br>
-    <a href="https://gitpitch.com/pro-features" class="pro-link">
-    More details here.</a>
-</div>
-<div class="right">
-    <ul>
-        <li>Private Repos</li>
-        <li>Private URLs</li>
-        <li>Password-Protection</li>
-        <li>Image Opacity</li>
-        <li>SVG Image Support</li>
-    </ul>
-</div>
-
+![choco](assets/image/dsc_compare.jpg.jpg)
 ---
 
 ### Questions?
