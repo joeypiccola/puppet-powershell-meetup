@@ -187,7 +187,7 @@ dsc_windowsfeature {'IIS':
 ```
 ---
 
-<p><span class="slide-title">DSC resource examples</span></p>
+<p><span class="slide-title">DSC demo resources</span></p>
 
 ```powershell
 dsc_windowsfeature {'IIS':
@@ -276,6 +276,8 @@ dsc_xwebsite {'LetsDoThis':
 ---
 
 #### Puppet DSC Demo
+
+lets make a website.
 
 ---
 
