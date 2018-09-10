@@ -141,16 +141,22 @@ Task parameters:
 
 ---
 
-@snap[west]
+@snap[north]
 ```powershell
-Get-ChildItem
+WindowsFeature IIS {
+  Ensure = 'present'
+  Name   = 'Web-Server'
+}
 ```
 @snapend
 
 
-@snap[east]
+@snap[south]
 ```powershell
-Get-ChildItem
+dsc_windowsfeature {'IIS':
+  dsc_ensure => 'present',
+  dsc_name   => 'Web-Server',
+}
 ```
 @snapend
 
