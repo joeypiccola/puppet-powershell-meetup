@@ -141,24 +141,27 @@ Task parameters:
 
 ---
 
-@snap[north]
-```powershell
+<p><span class="slide-title">Traditional DSC</span></p>
+
+```
+powershell
 WindowsFeature IIS {
   Ensure = 'present'
   Name   = 'Web-Server'
 }
 ```
-@snapend
 
+---
 
-@snap[south]
-```powershell
+<p><span class="slide-title">Puppet DSC</span></p>
+
+```
+powershell
 dsc_windowsfeature {'IIS':
   dsc_ensure => 'present',
   dsc_name   => 'Web-Server',
 }
 ```
-@snapend
 
 ---
 
