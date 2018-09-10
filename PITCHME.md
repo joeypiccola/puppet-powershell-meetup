@@ -7,7 +7,7 @@
 
 - Puppet Tasks with PowerShell
 - Upgrade PowerShell with Tasks & Chocolatey
-- DSC
+- Desired State Configuration (DSC
 
 ---
 
@@ -145,9 +145,9 @@ Task parameters:
 
 @ol[](false)
 - Manages all the bad parts about DSC.
-  + Module distribution
+  + DSC module distribution
   + Pull or Push Model
-  + Version Control
+  + Version control
 - Still requires PowerShell v5.0
 @olend
 
@@ -184,6 +184,72 @@ dsc_windowsfeature {'IIS':
   dsc_name   => 'Web-Server',
 }
 ```
+---
+
+<p><span class="slide-title">website demo</span></p>
+
+```
+dsc_windowsfeature {'IIS':
+  dsc_ensure => 'present',
+  dsc_name   => 'Web-Server',
+}
+
+dsc_windowsfeature {'AspNet45':
+  dsc_ensure => 'present',
+  dsc_name   => 'Web-Asp-Net45',
+}
+
+dsc_windowsfeature {'console':
+  dsc_ensure => 'present',
+  dsc_name   => 'Web-Mgmt-Console',
+}
+
+dsc_xwebsite {'Stop DefaultSite':
+  dsc_ensure       => 'present',
+  dsc_name         => 'Default Web Site',
+  dsc_state        => 'Stopped',
+  dsc_physicalpath => $defaultwebsitepath,
+}
+
+dsc_file {'tmp folder':
+  dsc_ensure          => 'present',
+  dsc_type            => 'Directory',
+  dsc_destinationpath => $zippath,
+}
+
+dsc_xremotefile {'Download website Zip':
+  dsc_destinationpath => $zipfile,
+  dsc_uri             => $zipuri,
+}
+
+dsc_archive {'Unzip and Copy the website':
+  dsc_ensure      => 'present',
+  dsc_path        => $zipfile,
+  dsc_destination => $destinationpath,
+}
+
+dsc_xwebsite {'LetsDoThis':
+  dsc_ensure       => 'present',
+  dsc_name         => $websitename,
+  dsc_state        => 'Started',
+  dsc_physicalpath => $destinationpath,
+  dsc_bindinginfo  => [
+                        {
+                          protocol => 'http',
+                          port     => 8080,
+                        }
+                      ],
+}
+```
+@[1-4]
+@[6-9]
+@[11-14]
+@[16-21]
+@[23-27]
+@[29-32]
+@[34-38]
+@[40-51]
+@[45-50]
 
 ---
 
