@@ -1,15 +1,13 @@
 ## @color[#2e75e8](PowerShell) + @color[#FE9F17](Puppet)
 ### Tasks, DSC, Chocolatey
 
-
-
 ---
 
 ## Agenda
 
 - Puppet Tasks with PowerShell
+- Upgrade PowerShell with Tasks & Chocolatey
 - DSC
--
 
 ---
 
@@ -78,6 +76,22 @@ Param(
 )
 cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 ```
+
+---
+
+#### Tasks Demo
+
+@ol[](false)
+- slmgr
+- SMBv1
+- testconnection
+@olend
+
+---
+
+#### Upgrade PowerShell with Tasks & Chocolatey
+
+![Logo](assets/img/yodawg.jpg)
 
 ---
 
