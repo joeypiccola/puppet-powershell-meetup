@@ -141,6 +141,21 @@ Task parameters:
 
 ---
 
+@snap[west]
+```powershell
+Get-ChildItem
+```
+@snapend
+
+
+@snap[east]
+```powershell
+Get-ChildItem
+```
+@snapend
+
+---
+
 @size[.8em](your-content1)
 @size[1.0em](your-content1)
 @size[1.5em](your-content1)
