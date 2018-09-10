@@ -99,8 +99,21 @@ cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 
 @ol[](false)
 - chocolatey installed
-- ```puppet_enterprise::profile::agent::package_inventory_enabled = true```
+- puppet_enterprise::profile::agent::package_inventory_enabled = true
 @olend
+
+---
+
+#### Tasks & Chocolatey Demo
+
+```
+Inventory: inventory[certname] { facts.powershell_version = "4.0" }
+Task parameters:
+  action: upgrade
+  name: powershell
+  provider: chocolatey
+  version: 5.1.14409.20180105
+```
 
 ---
 
