@@ -91,7 +91,7 @@ cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 
 #### Upgrade PowerShell with Tasks & Chocolatey
 
-![choco](assets/img/yodawg.jpg)
+![choco](assets/image/yodawg.jpg)
 
 ---
 
