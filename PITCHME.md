@@ -163,10 +163,10 @@ http.createServer(function (request, response) {
 
 <br>
 
-@fa[twitter gp-contact](joeypiccola)
+@fa[twitter](joeypiccola)
 
-@fa[github gp-contact](joeypiccola)
+@fa[github](joeypiccola)
 
-@fa[fire gp-contact](https://forge.puppet.com/jpi)
+@fa[fire]('https://forge.puppet.com/jpi')
 
-@fa[envelope gp-contact](joey@joeypiccola.com)
+@fa[envelope-square](joey@joeypiccola.com)
