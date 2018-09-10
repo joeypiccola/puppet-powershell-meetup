@@ -1,6 +1,8 @@
 ## @color[#2e75e8](PowerShell) + @color[#FE9F17](Puppet)
 ### Tasks, DSC, Chocolatey
 
+
+
 ---
 
 ## Agenda
@@ -161,16 +163,10 @@ http.createServer(function (request, response) {
 
 <br>
 
-@fa[twitter gp-contact](@gitpitch)
+@fa[twitter gp-contact](joeypiccola)
 
-@fa[github gp-contact](gitpitch)
+@fa[github gp-contact](joeypiccola)
 
-@fa[medium gp-contact](@gitpitch)
+@fa[fire gp-contact](https://forge.puppet.com/jpi)
 
----?image=assets/image/gitpitch-audience.jpg&opacity=100
-
-@title[Download this Template!]
-
-### Get your presentation started!
-### [Download this template @fa[external-link gp-download]](https://gitpitch.com/template/download/black)
-
+@fa[envelope gp-contact](joey@joeypiccola.com)
