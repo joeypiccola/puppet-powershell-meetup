@@ -43,6 +43,30 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 
 ---
 
+#### Anatomy of a Task cont...
+
+```
+C:\gits\control-repo [development ≡]> tree /F .\site\powershell_tasks
+  C:\gits\control-repo\site\powershell_tasks
+    ├── disablesmbv1.json
+    ├── disablesmbv1.ps1
+    ├── getkb.json
+    ├── getkb.ps1
+    ├── testconnection.json
+    ├── testconnection.ps1
+    ├── wuauclt.json
+    ├── wuauclt.ps1
+    └── logoffusers.ps1
+```
+
+@[3-4](Example task 1.)
+@[5-6](Example task 2.)
+@[7-8](Example task 3.)
+@[9-10](Example task 4.)
+@[11](Example task 4.)
+
+---
+
 @title[Task Metadata (slmgr_ipk.json)]
 
 <p><span class="slide-title">Task Metadata (slmgr_ipk.json)</span></p>
