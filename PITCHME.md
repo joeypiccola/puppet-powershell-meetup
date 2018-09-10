@@ -46,7 +46,7 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 #### Anatomy of a Task cont...
 
 ```
-C:\gits\control-repo [development ≡]> tree /F .\site\powershell_tasks
+C:\gits\control-repo > tree /F .\site\powershell_tasks
   C:\gits\control-repo\site\powershell_tasks
     ├── disablesmbv1.json
     ├── disablesmbv1.ps1
