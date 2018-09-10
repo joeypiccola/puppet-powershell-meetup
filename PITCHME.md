@@ -13,7 +13,7 @@
 
 #### Puppet Tasks
 
-@ol
+@ol[](false)
 - Tasks are single actions that you run on target machines in your infrastructure.
 - Best for changes that aren’t about enforcing the state of machines.
 - You can write tasks in any programming language that can run on the target nodes.
@@ -24,7 +24,7 @@
 
 #### Anatomy of a Task
 
-@ul
+@ul[](false)
 - Reside in $module\Tasks
 - Task file (PowerShell, Ruby, Bash, etc)
 - Metadata .json file [optional]
@@ -76,6 +76,12 @@ Param(
 )
 cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 ```
+
+---
+
+@size[1.5em](your-content1)
+@size[2.0em](your-content2)
+@size[2.5em](your-content3)
 
 ---
 
