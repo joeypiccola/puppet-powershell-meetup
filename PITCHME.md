@@ -79,6 +79,8 @@ cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 
 ---
 
+@size[.8em](your-content1)
+@size[1.0em](your-content1)
 @size[1.5em](your-content1)
 @size[2.0em](your-content2)
 @size[2.5em](your-content3)
