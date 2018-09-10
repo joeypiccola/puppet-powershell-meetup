@@ -167,6 +167,6 @@ http.createServer(function (request, response) {
 
 @fa[github](joeypiccola)
 
-@fa[wrench]('https://forge.puppet.com/jpi')
+@fa[wrench](forge.puppet.com/jpi)
 
 @fa[envelope-square](joey@joeypiccola.com)
