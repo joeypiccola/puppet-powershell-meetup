@@ -141,6 +141,8 @@ Task parameters:
 
 ---
 
+#### Syntax
+
 <p><span class="slide-title">Traditional DSC</span></p>
 
 ```
