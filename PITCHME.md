@@ -47,7 +47,7 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 
 <p><span class="slide-title">Task Metadata (slmgr_ipk.json)</span></p>
 
-@size[1.2em](Task metadata files describe task parameters, validate input, and control how the task runner executes the task.)
+@size[.7em](Task metadata files describe task parameters, validate input, and control how the task runner executes the task.)
 
 ```json
 {
