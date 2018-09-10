@@ -43,9 +43,9 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 
 ---
 
-@title[Task Metadata]
+@title[Task Metadata (slmgr_ipk.json)]
 
-<p><span class="slide-title">Task Metadata</span></p>
+<p><span class="slide-title">Task Metadata (slmgr_ipk.json)</span></p>
 
 ```json
 {
@@ -63,9 +63,9 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 
 ---
 
-@title[Task File]
+@title[Task File (slmgr_ipk.ps1)]
 
-<p><span class="slide-title">Task File</span></p>
+<p><span class="slide-title">Task File (slmgr_ipk.ps1)</span></p>
 
 ```powershell
 Param(
