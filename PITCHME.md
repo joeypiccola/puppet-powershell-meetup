@@ -58,12 +58,12 @@ C:\gits\control-repo > tree /F .\site\powershell_tasks
     ├── wuauclt.ps1
     └── logoffusers.ps1
 ```
-
+@[2](Location for tasks directly in control-repo)
 @[3-4](Example task 1.)
 @[5-6](Example task 2.)
 @[7-8](Example task 3.)
 @[9-10](Example task 4.)
-@[11](Example task 4.)
+@[11](Example task 5.)
 
 ---
 
