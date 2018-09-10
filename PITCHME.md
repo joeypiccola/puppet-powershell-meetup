@@ -241,6 +241,7 @@ dsc_xwebsite {'LetsDoThis':
                       ],
 }
 ```
+
 @[1-4]
 @[6-9]
 @[11-14]
@@ -249,7 +250,28 @@ dsc_xwebsite {'LetsDoThis':
 @[29-32]
 @[34-38]
 @[40-51]
-@[45-50]
+
+---
+
+<p><span class="slide-title">MSFT_xWebBindingInformation CIM class</span></p>
+
+![choco](assets/image/xwebsite_doc.jpg)
+
+```
+dsc_xwebsite {'LetsDoThis':
+  dsc_ensure       => 'present',
+  dsc_name         => $websitename,
+  dsc_state        => 'Started',
+  dsc_physicalpath => $destinationpath,
+  dsc_bindinginfo  => [
+                        {
+                          protocol => 'http',
+                          port     => 8080,
+                        }
+                      ],
+}
+```
+@[6-11]
 
 ---
 
