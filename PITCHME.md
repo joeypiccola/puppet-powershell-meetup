@@ -277,28 +277,9 @@ dsc_xwebsite {'LetsDoThis':
 
 ---
 
-```ruby
-dsc {'LetsDoThis':
-  resource_name => 'xWebsite',
-  module        => {
-    name    => 'xWebAdministration',
-    version => '2.2.0.0',
-  },
-  properties    => {
-    'ensure'       => 'Present',
-    'state'        => 'Started',
-    'name'         => $websitename,
-    'physicalpath' => $destinationpath,
-    'bindinginfo'  => {
-      'dsc_type'       => 'MSFT_xWebBindingInformation[]',
-      'dsc_properties' => {
-        'protocol' => 'HTTP',
-        'port'     => 8080,
-      }
-    },
-  }
-}
-```
+#### DSC Lite
+
+![dsc_lite](assets/image/dsc_lite.jpg)
 
 ---
 
