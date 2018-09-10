@@ -95,11 +95,31 @@ cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 
 ---
 
+#### Prerequisites
+
+@ol[](false)
+- chocolatey installed
+- ```puppet_enterprise::profile::agent::package_inventory_enabled = true```
+@olend
+
+---
+
 @size[.8em](your-content1)
 @size[1.0em](your-content1)
 @size[1.5em](your-content1)
 @size[2.0em](your-content2)
 @size[2.5em](your-content3)
+
+---
+
+
+#### prerequisites
+
+@ol[](false)
+- slmgr
+- SMBv1
+- testconnection
+@olend
 
 ---
 
