@@ -304,7 +304,7 @@ dsc {'LetsDoThis':
 
 #### DSC Comparison
 
-![choco](assets/image/dsc_compare.jpg.jpg)
+![dsc_compare](assets/image/dsc_compare.jpg)
 ---
 
 ### Questions?
