@@ -253,8 +253,6 @@ dsc_xwebsite {'LetsDoThis':
 
 ---
 
-<p><span class="slide-title">MSFT_xWebBindingInformation CIM class</span></p>
-
 ![choco](assets/image/xwebsite_doc.jpg)
 
 ```
