@@ -14,10 +14,21 @@
 #### Puppet Tasks
 
 @ol
+- Tasks are single actions that you run on target machines in your infrastructure.
+- Best for changes that aren’t about enforcing the state of machines.
+- You can write tasks in any programming language that can run on the target nodes.
+- Tasks can be chained together into Plans (not covered today).
+@olend
+
+---
+
+#### Anatomy of a Task
+
+@ul
 - Reside in $module\Tasks
 - Task file (PowerShell, Ruby, Bash, etc)
 - Metadata .json file [optional]
-@olend
+@ulend
 
 ```
 C:\gits\kms_win [master ≡]> tree /F tasks
@@ -32,7 +43,9 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 
 ---
 
-#### Task Metadata
+@title[Task Metadata]
+
+<p><span class="slide-title">Task Metadata</span></p>
 
 ```json
 {
@@ -48,10 +61,16 @@ C:\gits\kms_win [master ≡]> tree /F tasks
 }
 ```
 
+---
+
+@title[Task File]
+
+<p><span class="slide-title">Task File</span></p>
+
 ```powershell
 Param(
     [Parameter(Mandatory=$True)]
-    [String] $activation_key
+    [String]$activation_key
 )
 cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 ```
