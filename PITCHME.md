@@ -1,5 +1,5 @@
 ## @color[#2e75e8](PowerShell) + @color[#FE9F17](Puppet)
-### Tasks, DSC, Chocolatey
+### Tasks, Chocolatey, DSC
 
 ---
 
@@ -99,7 +99,7 @@ cscript.exe C:\Windows\System32\slmgr.vbs /ipk $activation_key
 
 @ol[](false)
 - chocolatey installed
-- puppet_enterprise::profile::agent::package_inventory_enabled = true
+- package_inventory_enabled = true
 @olend
 
 ---
@@ -117,22 +117,35 @@ Task parameters:
 
 ---
 
+#### Puppet & DSC
+
+@ol[](false)
+- Manages all the bad parts about DSC.
+  + Module distribution
+  + Pull or Push Model
+  + Version Control
+- Still requires PowerShell v5.0
+@olend
+
+---
+
+#### DSC Modules?
+
+![choco](assets/image/magnets.jpg)
+
+---
+
+#### DSC Modules
+
+![choco](assets/image/dsc_mod.jpg)
+
+---
+
 @size[.8em](your-content1)
 @size[1.0em](your-content1)
 @size[1.5em](your-content1)
 @size[2.0em](your-content2)
 @size[2.5em](your-content3)
-
----
-
-
-#### prerequisites
-
-@ol[](false)
-- slmgr
-- SMBv1
-- testconnection
-@olend
 
 ---
 
