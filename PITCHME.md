@@ -144,19 +144,15 @@ Task parameters:
 <p><span class="slide-title">Traditional DSC</span></p>
 
 ```
-powershell
 WindowsFeature IIS {
   Ensure = 'present'
   Name   = 'Web-Server'
 }
 ```
 
----
-
 <p><span class="slide-title">Puppet DSC</span></p>
 
 ```
-powershell
 dsc_windowsfeature {'IIS':
   dsc_ensure => 'present',
   dsc_name   => 'Web-Server',
