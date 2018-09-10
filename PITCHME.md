@@ -146,8 +146,9 @@ Task parameters:
 @ol[](false)
 - Manages all the bad parts about DSC.
   + DSC module distribution
-  + Pull or Push Model
+  + Initial LCM configuration
   + Version control
+  + High availability
 - Still requires PowerShell v5.0
 @olend
 
@@ -178,7 +179,7 @@ WindowsFeature IIS {
 
 <p><span class="slide-title">Puppet DSC</span></p>
 
-```t
+```powershell
 dsc_windowsfeature {'IIS':
   dsc_ensure => 'present',
   dsc_name   => 'Web-Server',
@@ -188,7 +189,7 @@ dsc_windowsfeature {'IIS':
 
 <p><span class="slide-title">DSC resource examples</span></p>
 
-```t
+```powershell
 dsc_windowsfeature {'IIS':
   dsc_ensure => 'present',
   dsc_name   => 'Web-Server',
