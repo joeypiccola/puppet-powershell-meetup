@@ -281,6 +281,15 @@ lets make a website.
 
 ---
 
+#### Puppet DSC Demo
+
+we did it!
+[code]https://gist.github.com/joeypiccola/51efedc0d73ba220ee77e170e6bf04e4
+![choco](assets/image/website.jpg)
+
+
+---
+
 #### DSC Lite
 
 ![dsc_lite](assets/image/dsc_lite.jpg)
